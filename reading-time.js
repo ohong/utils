@@ -7,7 +7,7 @@ if (document.querySelector("body").classList.contains("post")) {
                 Object.assign(
                     document.createElement("p"), {
                     className: "reading-time",
-                    innerHTML: `${readingTime} minute read`
+                    innerHTML: ` · ${readingTime} minute read`
                 })),
             document.querySelector("main").childNodes[parseInt(document.currentScript.getAttribute("data-before-child") ?? 4)]);
 }
